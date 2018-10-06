@@ -17,13 +17,13 @@ using namespace std;
 #define all(c) (c).begin(),(c).end()
 #define test() ll t;cin>>t;while(t--)
 #define fastIO ios_base::sync_with_stdio(0);cin.tie(0)
-#define input() freopen("input.txt","r",stdin);freopen("output.txt","w",stdout)
 
 typedef vector<int> vi;
 typedef vector<ll> vll;
 typedef pair<int,int> pii;
 
-
+const int N=1e5+5;
+ll arr[N];
 
 int main() {
     fastIO;
