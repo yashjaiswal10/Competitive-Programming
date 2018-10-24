@@ -1,9 +1,9 @@
-/******************************************
-* AUTHOR : SAURABH SHUKLA *
-* INSTITUTION : IIIT GWALIOR *
-******************************************/
 #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+
 using namespace std;
+using namespace __gnu_pbds;
 
 #define ll long long 
 #define pb push_back
@@ -27,11 +27,11 @@ typedef vector<int> vi;
 typedef vector<ll> vll;
 typedef pair<int,int> pii;
 
-const int N=1e5+5;
-ll arr[N];
+const int maxn=1e5+5;
+ll arr[maxn];
 
 int main() {
-    fastIO;
+    //fastIO;
     test(){
 
     }
