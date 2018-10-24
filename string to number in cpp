@@ -1,0 +1,1 @@
+ll string_to_number(string s)	{ll x=0; stringstream convert(s); convert>>x; return x;}
