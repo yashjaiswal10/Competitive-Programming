@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n,k,count=0;
+        cin>>n>>k;
+        int arr[n+1];
+        arr[0]=0;
+        for(int i=1; i<n+1; i++){
+            cin>>arr[i];   
+        }
+        for(int i=1; i<n+1; i++){
+            if(arr[i] - arr[i-1]<=k)
+                count+=0;
+            else
+                if((arr[i] - arr[i-1])%k!=0)
+                    count+= int((arr[i] - arr[i-1])/k);
+                else
+                    count+= (int((arr[i] - arr[i-1])/k) - 1);
+        }
+          cout<<count<<endl;   
+    }
+}
