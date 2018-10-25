@@ -13,7 +13,7 @@ using namespace __gnu_pbds;
 #define ss second
 #define mod 1000000007
 #define pq priority_queue
-#define umap unordered_map
+#define umap gp_hash_table
 #define sz(a) int((a).size())
 #define clr(a,x) memset(a,x,sizeof(a))
 #define rep(i,k,n) for (int i = k; i < n; ++i)
