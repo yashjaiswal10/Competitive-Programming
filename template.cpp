@@ -1,9 +1,5 @@
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-
 using namespace std;
-using namespace __gnu_pbds;
 
 #define ll long long 
 #define pb push_back
@@ -11,24 +7,32 @@ using namespace __gnu_pbds;
 #define endl "\n"
 #define ff first
 #define ss second
-#define mod 1000000007
+#define l_b lower_bound
+#define u_b upper_bound
 #define pq priority_queue
-#define umap gp_hash_table
+#define umap unordered_map
 #define sz(a) int((a).size())
-#define clr(a,x) memset(a,x,sizeof(a))
-#define rep(i,k,n) for (int i = k; i < n; ++i)
-#define repr(i,k,n) for (int i = k; i >= n; --i)
 #define all(c) (c).begin(),(c).end()
 #define test() ll t;cin>>t;while(t--)
+#define clr(a,x) memset(a,x,sizeof(a))
+#define rep(i,n) for (int i = 0; i < n; ++i)
+#define repp(i,a,n) for (int i = a; i <= n; ++i)
+#define precise(x) cout<<fixed<<setprecision(x)
+#define debug(x) cout<<(#x)<<" is " <<(x)<<endl
 #define fastIO ios_base::sync_with_stdio(0);cin.tie(0)
-#define debug(x) cout << (#x) << " is " << (x) << endl
 
-typedef vector<int> vi;
-typedef vector<ll> vll;
-typedef pair<int,int> pii;
 
-const int maxn=1e5+5;
-ll arr[maxn];
+using ld = long double;
+using vi = vector<int>;
+using vll = vector<ll>;
+using pii = pair<int,int>;
+using pll = pair<ll, ll>;
+using vpii = vector<pii>;
+using vpll = vector<pll>;
+
+const int mod=1e9+7;
+const int maxn=1e6+5;
+ll a[maxn];
 
 int main() {
     //fastIO;
