@@ -34,6 +34,6 @@ const int N = 1e6 + 5;
 int main() {
 	// fastIO;
     
-    
-    return 0;
+
+	return 0;
 }
