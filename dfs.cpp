@@ -1,8 +1,9 @@
 
-void dfs(int s) {
-        visited[s] = true;
-        for(int i = 0;i < adj[s].size();++i)    {
-         if(visited[adj[s][i]] == false)
-             dfs(adj[s][i]);
-        }
+
+void dfs(int v) {
+    visited[v] = true;
+    for (int u : adj[v]) {
+        if (!visited[u])
+            dfs(u);
     }
+}

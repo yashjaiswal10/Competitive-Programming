@@ -1,18 +1,24 @@
-void bfs(int s) {
+
+
+int bfs(int s) {
     queue<int> q;
     vector<bool> visited(n);
-
+    int visCount = 0;
     visited[s] = true;
     q.push(s);
 
     while (!q.empty()) {
-        int currentNode = q.pop();
-
-        for (auto neighbour: graph[currentNode]) {
-            if (!visited[neighbour]) {
-                visited[neighbour] = true;
-                q.push(neighbour);
+    	
+        int c = q.pop();
+        for (auto v: graph[c]) {
+            if (!visited[v]) {
+                visited[v] = true;
+                q.push(v);
             }
         }
+                
+        visCount += 1;
     }
+
+    return visCount;
 }

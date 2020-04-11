@@ -1,14 +1,19 @@
-const int MAX=1e7+5;
-vector<bool> prime(MAX,true);
+
+vector<bool> is_prime(N, true);
+vector<int> primes;
 
 void sieve(){
 
-    prime[0]=prime[1]=false;
-    for (int i = 2; i*i<MAX ; ++i){
-        if(prime[i]){
-            for (int j=2*i;j<MAX;j+=i){
-                prime[j]=false;
-            }
-        }
-    }
+	is_prime[0] = is_prime[1] = false;
+	for (int i = 2; i * i <= N; i++) {
+	    if (is_prime[i]) {
+	        for (int j = i * i; j <= N; j += i)
+	            is_prime[j] = false;
+	    }
+	}
+	for (int i = 2; i < N; ++i){
+		if(is_prime[i])
+			primes.pb(i);
+	}
+
 }
